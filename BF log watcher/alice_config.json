@@ -1,0 +1,43 @@
+{
+    "name":"alice",
+    "log_root":"C:\\Users\\Ma Quantum Lab\\Dropbox\\_Bluefors\\_Bluefors_Alice_Log_Synced\\Bluefors Log\\",
+    "datasources":[
+        {
+            "function":".\\Log Reader Functions\\temp.py",
+            "req_values":[
+                "alice_temp_50k",
+                "alice_temp_4k", 
+                "alice_temp_still"
+            ],
+            "opt_values":[
+                "alice_temp_mxc"
+            ]
+        },
+        {
+            "function":".\\Log Reader Functions\\maxiguage.py",
+            "req_values":[
+                "alice_pressure_ovc",
+                "alice_pressure_still",
+                "alice_pressure_diff_ch4", 
+                "alice_pressure_diff_ch3",
+                "alice_pressure_tank"
+            ],
+            "opt_values":[]
+        },
+        {
+            "function":".\\Log Reader Functions\\status.py",
+            "req_values":[
+                "alice_compressor_water_in",
+                "alice_compressor_water_out", 
+                "alice_compressor_oil_temp", 
+                "alice_compressor_err"
+            ],
+            "opt_values":[]
+        },
+        {
+            "function":".\\Log Reader Functions\\flowmeter.py",
+            "req_values":["alice_flowmeter"],
+            "opt_values":[]
+        }
+    ]
+}

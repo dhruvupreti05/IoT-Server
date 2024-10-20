@@ -1,0 +1,7 @@
+{
+    "mqtt_broker_host":"192.168.1.104",
+    "mqtt_broker_port":1883,
+    "mqtt_username":"maserver",
+    "mqtt_password":"malabpurdue",
+    "mqtt_topic_prefix":"fridges/"
+}

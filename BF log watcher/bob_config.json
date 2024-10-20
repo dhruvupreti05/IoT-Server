@@ -1,0 +1,43 @@
+{
+    "name":"bob",
+    "log_root":"C:\\Users\\Ma Quantum Lab\\Bluefors logs\\",
+    "datasources":[
+        {
+            "function":"Log Reader Functions\\temp.py",
+            "req_values":[
+                "bob_temp_50k",
+                "bob_temp_4k", 
+                "bob_temp_still"
+            ],
+            "opt_values":[
+                "bob_temp_mxc"
+            ]
+        },
+        {
+            "function":"Log Reader Functions\\maxiguage.py",
+            "req_values":[
+                "bob_pressure_ovc",
+                "bob_pressure_still",
+                "bob_pressure_diff_ch4", 
+                "bob_pressure_diff_ch3",
+                "bob_pressure_tank"
+            ],
+            "opt_values":[]
+        },
+        {
+            "function":"Log Reader Functions\\status.py",
+            "req_values":[
+                "bob_compressor_water_in",
+                "bob_compressor_water_out", 
+                "bob_compressor_oil_temp", 
+                "bob_compressor_err"
+            ],
+            "opt_values":[]
+        },
+        {
+            "function":"Log Reader Functions\\flowmeter.py",
+            "req_values":["bob_flowmeter"],
+            "opt_values":[]
+        }
+    ]
+}
